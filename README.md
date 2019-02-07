@@ -1,45 +1,22 @@
-# Hello World with React and Cloud 9
+# Medlingos - Project for Mangohacks2019
+This is about to create a simplified experience between patients and healthcare professionals to increase access and healthcare quality by overcoming the current limitations set by cultural barriers, specifically (and hopefully not limited to) language barriers.
 
-Requirements: Make sure you are using node version 8
-* `$ node -v` to check which node version you are using
-* `$ nvm use 8` to switch to using version 8
-* `$ nvm install 8` to install version 8 if necessary
+Proposed solution is patient-centered, therefore the patient is the one that starts the interaction. 
 
-##### Download the boilerplate using the BreatheCode CLI
-```
-$ npm i breathecode-cli -g
-```
+The app would be used when a patient seeks medical attention, but feels limited by his communication skills. Through a series of Q & A, the app should create a sort of quick reference profile that will be used to:
+* First, recommend the patient to visit a specific medical facility based on location, multilanguage friendly, maybe healthcare provider, and current condition based somehow on the quick survey.
+* Second, intake information from the patient and create a translation to provide to the healthcare facility so they can select the most adequate healthcare professional.
+* Third, provide both the patient and the professional some additional communication tools (situation related keywords, etc.) that might help when they interact.
 
-##### Download the boilerplate using the BreatheCode CLI
-```
-$ bc start:react-project -r
-```
-##### and install the npm package:
-```
-$ npm install
-```
+##### Issues:
+•	Patients not getting medical attention because they don’t know how to traverse the healthcare system in the US, especially when they face cultural limitations such as language.
 
-## Start coding! 
+##### Purpose:
+•	To connect a non-english speaking patient with the appropriate healthcare professional.
 
-Start the webpack server with live reload:
-- `$ npm run c9` for Cloud 9 Users.
-- `$ npm run dev-server` for windows, mac or linux.
 
-You can update the `styles/index.scss` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
-
-## Publish your website! 
-
-This boilerplate is 100% compatible with the free github pages hosting.
-To publish your website you need to `push your code to your github repository` and run the following command after:
-```sh
-$ npm run deploy
-```
-
-## Other features
-
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code identation and formating.
-- Error reporting: Use of [esling](https://eslint.org/) for better error reporting.
-- Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
-- One-click publish of the code to github pages.
-- Babel 7 (really fast).
+## Tech stack
+* ReactJS
+* Bootstrap
+* Google Translate and Maps APIs
+* 8base for storing data (todo)
